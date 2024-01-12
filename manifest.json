@@ -1,26 +1,26 @@
 {
-  "name": "@deskpro-apps/my-app",
-  "title": "My App",
-  "description": "My Deskpro app",
+  "name": "@deskpro-apps/asset-panda",
+  "title": "AssetPanda",
+  "description": "",
   "version": "0.0.5",
   "scope": "agent",
   "isSingleInstall": false,
   "hasDevMode": true,
-  "targets": [{ "target": "ticket_sidebar", "entrypoint": "index.html" }],
-  "settings": {
-    "example": {
-      "title": "Example Setting",
-      "description": "Example backend only setting",
-      "type": "string",
-      "isRequired": false,
-      "isBackendOnly": true
+  "targets": [{ "target": "user_sidebar", "entrypoint": "index.html" }],
+  "serveUrl": "https://apps-cdn.deskpro-service.com/__name__/__version__",
+  "entityAssociations": {
+    "linkedAssetPanda": {
+      "entity": "person",
+      "type": "external_id",
+      "title": "Linked AssetPanda Stuff"
     }
   },
+  "settings": {},
   "proxy": {
     "whitelist": [
       {
-        "url": "https://jsonplaceholder.typicode.com/.*",
-        "methods": ["GET"],
+        "url": "https://api.assetpanda.com/v3/.*",
+        "methods": ["GET", "POST"],
         "timeout": 20
       }
     ]
