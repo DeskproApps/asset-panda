@@ -1,8 +1,13 @@
-import { useSetTitle, useRegisterElements } from "../../hooks";
+import { useParams } from "react-router-dom";
+import { LoadingSpinner } from "@deskpro/app-sdk";
+import { useSetTitle, useRegisterElements, useAsset } from "../../hooks";
 import { View } from "../../components";
 import type { FC } from "react";
 
 const ViewPage: FC = () => {
+  const { assetId } = useParams();
+  const { asset, isLoading } = useAsset(assetId);
+
   useSetTitle("Asset details");
 
   useRegisterElements(({ registerElement }) => {
@@ -20,8 +25,14 @@ const ViewPage: FC = () => {
     });
   });
 
+  if (isLoading) {
+    return (
+      <LoadingSpinner/>
+    );
+  }
+
   return (
-    <View/>
+    <View asset={asset}/>
   );
 };
 

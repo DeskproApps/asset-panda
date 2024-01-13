@@ -3,3 +3,4 @@ export { GlobalAuth } from "./GlobalAuth";
 export { Link } from "./Link";
 export { Home } from "./Home";
 export { View } from "./View";
+export { AssetItem } from "./AssetItem";

@@ -34,7 +34,7 @@
     "auth": {
       "title": "",
       "type": "app_embedded",
-      "options": { "entrypoint": "https://localhost:3000/#/admin/global-auth" },
+      "options": { "entrypoint": "#/admin/global-auth" },
       "isRequired": false,
       "isBackendOnly": false,
       "order": 30

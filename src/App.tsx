@@ -60,7 +60,7 @@ const App: FC = () => {
         <Route path="/admin/global-auth" element={<GlobalAuthPage/>} />
         <Route path="/link" element={<LinkPage/>} />
         <Route path="/home" element={<HomePage/>} />
-        <Route path="/view" element={<ViewPage/>} />
+        <Route path="/view/:assetId" element={<ViewPage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
       {!isAdmin && (<><br/><br/><br/></>)}
