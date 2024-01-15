@@ -15,7 +15,31 @@
       "title": "Linked AssetPanda Stuff"
     }
   },
-  "settings": {},
+  "settings": {
+    "email": {
+      "title": "Email",
+      "type": "string",
+      "isRequired": true,
+      "isBackendOnly": true,
+      "validationPattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "order": 10
+    },
+    "password": {
+      "title": "Password",
+      "type": "string",
+      "isRequired": true,
+      "isBackendOnly": true,
+      "order": 20
+    },
+    "auth": {
+      "title": "",
+      "type": "app_embedded",
+      "options": { "entrypoint": "#/admin/global-auth" },
+      "isRequired": false,
+      "isBackendOnly": false,
+      "order": 30
+    }
+  },
   "proxy": {
     "whitelist": [
       {

@@ -1,0 +1,1 @@
+export { GlobalAuthPage } from "./GlobalAuthPage";

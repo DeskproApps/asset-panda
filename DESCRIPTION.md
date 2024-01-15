@@ -1,4 +1,4 @@
-My App
+Description
 ======
 
-todo: add a description that will appear alongside your app in Deskpro admin
+Never lose track of an item again with our integration with Asset Panda's cloud-based asset management and tracking platform that adapts to the way you work.

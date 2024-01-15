@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "title": "Thomas’s MacBook Pro",
+    "href": "https://www.deskpro.com/apps/",
+    "device_name": "Thomas’s Laptop",
+    "username": "Thomas Rolfe",
+    "model": "MacBook Pro 16\"",
+    "unique_identifier": "B3F85D4B-3756-5256-B231-0B7B11283A72",
+    "serial_number": "Y47M233K4W",
+    "os_version": "12.3 (Build 21E230)",
+    "storage_capacity": "994.0 GB (963.0 GB free)"
+  },
+  {
+    "id": 1,
+    "title": "Alice's iPhone 13",
+    "href": "https://www.deskpro.com/apps/",
+    "device_name": "Alice's Phone",
+    "username": "Alice Johnson",
+    "model": "iPhone 13",
+    "unique_identifier": "A1B2C3D4-E5F6-A7B8-C9D0-E1F2A3B4C5D6",
+    "serial_number": "X89Y765Z2Q",
+    "os_version": "iOS 15.2",
+    "storage_capacity": "256.0 GB (220.5 GB free)"
+  },
+  {
+    "id": 2,
+    "title": "Bob's Dell XPS 15",
+    "href": "https://www.deskpro.com/apps/",
+    "device_name": "Bob's Laptop",
+    "username": "Bob Smith",
+    "model": "Dell XPS 15",
+    "unique_identifier": "F6E5D4C3-B2A1-9B8C-7D6E-5F4A3B2C1D",
+    "serial_number": "D7X6P5S4L3",
+    "os_version": "Windows 11",
+    "storage_capacity": "512.0 GB (480.0 GB free)"
+  },
+  {
+    "id": 3,
+    "title": "Charlie's iPad Air",
+    "href": "https://www.deskpro.com/apps/",
+    "device_name": "Charlie's Tablet",
+    "username": "Charlie Brown",
+    "model": "iPad Air",
+    "unique_identifier": "1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D",
+    "serial_number": "I8P7A6D5A4I3R2",
+    "os_version": "iPadOS 15.1",
+    "storage_capacity": "128.0 GB (110.2 GB free)"
+  },
+  {
+    "id": 4,
+    "title": "David's Samsung Galaxy Watch 4",
+    "href": "https://www.deskpro.com/apps/",
+    "device_name": "David's Smartwatch",
+    "username": "David White",
+    "model": "Samsung Galaxy Watch 4",
+    "unique_identifier": "S4A3M2S1U0N",
+    "serial_number": "G5W4A3T2C1H0",
+    "os_version": "Tizen 5.5",
+    "storage_capacity": "16.0 GB (14.5 GB free)"
+  }
+]
