@@ -2,7 +2,7 @@
   "name": "@deskpro-apps/asset-panda",
   "title": "AssetPanda",
   "description": "",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "scope": "agent",
   "isSingleInstall": false,
   "hasDevMode": true,
