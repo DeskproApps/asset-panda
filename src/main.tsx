@@ -11,7 +11,7 @@ import { ErrorFallback } from "./components";
 import "@deskpro/deskpro-ui/dist/deskpro-ui.css";
 import "@deskpro/deskpro-ui/dist/deskpro-custom-icons.css";
 import "simplebar/dist/simplebar.min.css";
-import "./index.css";
+import "./main.css";
 import { Scrollbar } from "@deskpro/deskpro-ui";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as Element);
