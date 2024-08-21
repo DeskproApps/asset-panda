@@ -17,6 +17,7 @@ const App: FC = () => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const { client } = useDeskproAppClient();
+  console.log(client);
   const isAdmin = useMemo(() => pathname.includes("/admin/"), [pathname]);
 
   useDeskproElements(({ registerElement }) => {
