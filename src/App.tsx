@@ -1,5 +1,4 @@
-import { useMemo } from "react";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
 import {
@@ -15,9 +14,7 @@ import type { EventPayload } from "./types";
 
 const App: FC = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   const { client } = useDeskproAppClient();
-  const isAdmin = useMemo(() => pathname.includes("/admin/"), [pathname]);
 
   useDeskproElements(({ registerElement }) => {
     registerElement("refresh", { type: "refresh_button" });
@@ -44,17 +41,14 @@ const App: FC = () => {
 
   if (!client) {
     return (
-      <LoadingSpinner/>
+      <LoadingSpinner />
     );
   }
 
   return (
-    <>
-      <Routes>
-        <Route index element={<LoadingAppPage/>} />
-      </Routes>
-      {!isAdmin && (<><br/><br/><br/></>)}
-    </>
+    <Routes>
+      <Route index element={<LoadingAppPage />} />
+    </Routes>
   );
 };
 
