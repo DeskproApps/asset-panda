@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
-      - run: git fetch --no-tags --depth=1 origin master
 
       - run: git fetch --no-tags --depth=1 origin master
 
@@ -95,5 +94,5 @@ jobs:
   deploy:
     uses: DeskproApps/app-template-vite/.github/workflows/subworkflow-deploy.yml@master
     secrets: inherit
-    if: secrets.DESKPRO_SERVICE_TOKEN != ''
+    if: github.repository_owner == 'deskpro' || github.repository_owner == 'DeskproApps'
     needs: [deskpro_app_test_and_build]
