@@ -3,7 +3,7 @@ import { proxyFetch } from "@deskpro/app-sdk";
 import { BASE_URL, placeholders } from "../../constants";
 import { getQueryParams, getRequestBody } from "../../utils";
 import { AssetPandaError } from "./AssetPandaError";
-import type { Request, FetchOptions } from "../../types";
+import type { Request } from "../../types";
 
 const baseRequest: Request = async (client, {
   url,
@@ -20,7 +20,7 @@ const baseRequest: Request = async (client, {
   const body = getRequestBody(data);
 
   const requestUrl = `${baseUrl}${isEmpty(params) ? "": `?${params}`}`;
-  const options: FetchOptions = {
+  const options: RequestInit = {
     method,
     body,
     headers: {
