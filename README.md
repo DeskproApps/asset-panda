@@ -20,8 +20,6 @@
   <br />
 </div>
 
-![screenshot of the Asset Panda app](./docs/readme/app-screenshot.png)
-
 ## **About the App**
 The Asset Panda app enhances your Deskpro experience by integrating powerful asset management capabilities directly into your helpdesk. With this app, agents can efficiently track assets, manage asset lifecycles, automate processes, and streamline workflows to improve productivity and deliver exceptional support.
 
